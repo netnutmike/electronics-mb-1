@@ -6755,7 +6755,6 @@ part number 2062-2P from STA</description>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -6792,7 +6791,6 @@ part number 2062-2P from STA</description>
 <instance part="SUPPLY2" gate="GND" x="25.4" y="68.58" rot="R270"/>
 <instance part="P+1" gate="VCC" x="50.8" y="68.58" rot="R270"/>
 <instance part="J1" gate="G$1" x="22.86" y="132.08"/>
-<instance part="P+3" gate="VCC" x="35.56" y="134.62" rot="R270"/>
 <instance part="SUPPLY3" gate="GND" x="35.56" y="132.08" rot="R90"/>
 <instance part="SUPPLY4" gate="GND" x="124.46" y="101.6" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="73.66" y="96.52" rot="R270"/>
@@ -6845,11 +6843,6 @@ part number 2062-2P from STA</description>
 <pinref part="U$2" gate="G$1" pin="A"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="45.72" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="30.48" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -7060,6 +7053,18 @@ part number 2062-2P from STA</description>
 <junction x="205.74" y="73.66"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="104.14" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RAW" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RAW"/>
+<wire x1="78.74" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
+<label x="71.12" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="35.56" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

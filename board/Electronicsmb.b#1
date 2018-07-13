@@ -8,10 +8,10 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -173,6 +173,18 @@ k3do.com</text>
 <hole x="6.35" y="64.77" drill="3"/>
 <hole x="88.9" y="64.77" drill="3"/>
 <hole x="88.9" y="6.35" drill="3"/>
+<text x="57.15" y="66.04" size="1.778" layer="25">TRUSTWORTHY</text>
+<text x="72.39" y="52.07" size="1.778" layer="25">LOYAL</text>
+<text x="73.66" y="39.37" size="1.778" layer="25">HELPFUL</text>
+<text x="71.12" y="26.67" size="1.778" layer="25">FRIENDLY</text>
+<text x="59.69" y="16.51" size="1.778" layer="25">COURTEOUS</text>
+<text x="44.45" y="10.16" size="1.778" layer="25">KIND</text>
+<text x="22.86" y="16.51" size="1.778" layer="25">OBEDIENT</text>
+<text x="10.16" y="39.37" size="1.778" layer="25">THRIFTY</text>
+<text x="15.24" y="52.07" size="1.778" layer="25">BRAVE</text>
+<text x="13.97" y="27.94" size="1.778" layer="25">CHEERFUL</text>
+<text x="25.4" y="66.04" size="1.778" layer="21">CLEAN</text>
+<text x="40.64" y="59.69" size="1.778" layer="25">REVERENT</text>
 </plain>
 <libraries>
 <library name="SparkFun-LED" urn="urn:adsk.eagle:library:529">
@@ -1812,7 +1824,6 @@ design rules under a new name.</description>
 <signal name="VCC">
 <contactref element="U$1" pad="5V"/>
 <contactref element="U$2" pad="P$1"/>
-<contactref element="J1" pad="2"/>
 <wire x1="45.8724" y1="24.0792" x2="38.1" y2="24.0792" width="0.1524" layer="16"/>
 <wire x1="52.4256" y1="17.526" x2="45.8724" y2="24.0792" width="0.1524" layer="16"/>
 <wire x1="57.3024" y1="17.526" x2="52.4256" y2="17.526" width="0.1524" layer="16"/>
@@ -1820,7 +1831,6 @@ design rules under a new name.</description>
 <wire x1="76.0476" y1="4.572" x2="70.2564" y2="4.572" width="0.1524" layer="16"/>
 <wire x1="38.1" y1="24.0792" x2="38.1" y2="24.13" width="0.1524" layer="16"/>
 <wire x1="76.0476" y1="4.572" x2="76.16" y2="4.46" width="0.1524" layer="16"/>
-<wire x1="11.43" y1="50.9016" x2="11.43" y2="64.77" width="0.1524" layer="16"/>
 <wire x1="38.1" y1="24.2316" x2="11.43" y2="50.9016" width="0.1524" layer="16"/>
 <wire x1="38.1" y1="24.2316" x2="38.1" y2="24.13" width="0.1524" layer="16"/>
 </signal>
@@ -2047,6 +2057,11 @@ design rules under a new name.</description>
 <wire x1="20.574" y1="47.5488" x2="12.4968" y2="39.4716" width="0.1524" layer="1"/>
 <wire x1="16.1544" y1="34.4424" x2="16.27" y2="34.5" width="0.1524" layer="1"/>
 <wire x1="20.574" y1="47.5488" x2="20.59" y2="47.61" width="0.1524" layer="1"/>
+</signal>
+<signal name="RAW">
+<contactref element="U$1" pad="RAW"/>
+<contactref element="J1" pad="2"/>
+<wire x1="38.1" y1="16.51" x2="11.43" y2="64.77" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
