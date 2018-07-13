@@ -1904,6 +1904,10 @@ design rules under a new name.</description>
 <wire x1="63.8556" y1="5.0292" x2="48.3108" y2="5.0292" width="0.1524" layer="16"/>
 <wire x1="68.58" y1="9.7536" x2="63.8556" y2="5.0292" width="0.1524" layer="16"/>
 <wire x1="48.3108" y1="5.0292" x2="48.27" y2="5" width="0.1524" layer="16"/>
+<contactref element="S1" pad="1"/>
+<wire x1="16.9164" y1="14.7828" x2="16.9164" y2="3.9624" width="0.1524" layer="16"/>
+<wire x1="15.0876" y1="16.6116" x2="16.9164" y2="14.7828" width="0.1524" layer="16"/>
+<wire x1="16.9164" y1="3.9624" x2="16.7894" y2="3.8354" width="0.1524" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="U$1" pad="5V"/>
@@ -2217,9 +2221,6 @@ design rules under a new name.</description>
 <wire x1="21.336" y1="3.9624" x2="24.6888" y2="3.9624" width="0.1524" layer="16"/>
 <wire x1="53.34" y1="21.4884" x2="53.34" y2="21.59" width="0.1524" layer="16"/>
 <wire x1="21.336" y1="3.9624" x2="21.3106" y2="3.8354" width="0.1524" layer="16"/>
-</signal>
-<signal name="N$2">
-<contactref element="S1" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

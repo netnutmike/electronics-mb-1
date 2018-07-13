@@ -1834,9 +1834,6 @@ design rules under a new name.</description>
 <wire x1="38.1" y1="44.3484" x2="38.1" y2="44.45" width="0.1524" layer="16"/>
 <wire x1="78.6384" y1="4.572" x2="78.66" y2="4.46" width="0.1524" layer="16"/>
 </signal>
-<signal name="D13">
-<contactref element="U$1" pad="D13"/>
-</signal>
 <signal name="D12">
 <contactref element="U$1" pad="D12"/>
 <contactref element="D12" pad="A"/>
