@@ -8,10 +8,10 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -40,7 +40,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -169,6 +169,22 @@
 k3do.com</text>
 <text x="8.89" y="2.54" size="1.778" layer="25">Start</text>
 <text x="86.36" y="2.54" size="1.778" layer="25">Mode</text>
+<hole x="6.35" y="6.35" drill="3"/>
+<hole x="6.35" y="64.77" drill="3"/>
+<hole x="88.9" y="64.77" drill="3"/>
+<hole x="88.9" y="6.35" drill="3"/>
+<text x="57.15" y="66.04" size="1.778" layer="25">TRUSTWORTHY</text>
+<text x="72.39" y="52.07" size="1.778" layer="25">LOYAL</text>
+<text x="73.66" y="39.37" size="1.778" layer="25">HELPFUL</text>
+<text x="71.12" y="26.67" size="1.778" layer="25">FRIENDLY</text>
+<text x="59.69" y="16.51" size="1.778" layer="25">COURTEOUS</text>
+<text x="44.45" y="10.16" size="1.778" layer="25">KIND</text>
+<text x="22.86" y="16.51" size="1.778" layer="25">OBEDIENT</text>
+<text x="10.16" y="39.37" size="1.778" layer="25">THRIFTY</text>
+<text x="15.24" y="52.07" size="1.778" layer="25">BRAVE</text>
+<text x="13.97" y="27.94" size="1.778" layer="25">CHEERFUL</text>
+<text x="25.4" y="66.04" size="1.778" layer="21">CLEAN</text>
+<text x="40.64" y="59.69" size="1.778" layer="25">REVERENT</text>
 </plain>
 <libraries>
 <library name="SparkFun-LED" urn="urn:adsk.eagle:library:529">
@@ -1833,9 +1849,6 @@ design rules under a new name.</description>
 <wire x1="78.6384" y1="4.572" x2="77.5716" y2="5.6388" width="0.1524" layer="16"/>
 <wire x1="38.1" y1="44.3484" x2="38.1" y2="44.45" width="0.1524" layer="16"/>
 <wire x1="78.6384" y1="4.572" x2="78.66" y2="4.46" width="0.1524" layer="16"/>
-</signal>
-<signal name="D13">
-<contactref element="U$1" pad="D13"/>
 </signal>
 <signal name="D12">
 <contactref element="U$1" pad="D12"/>
